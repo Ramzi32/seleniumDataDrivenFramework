@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-name" class="navigator-link">
+              <span class="suite-name border-failed">name</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-name" class="navigator-link ">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-name" class="navigator-link ">
+                    <span class="test-stats">4 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-name" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-name" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-name" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-name" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-name" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">8 methods, 1 failed,  2 skipped,  5 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-name" class="hide-methods failed suite-name"> (hide)</a> <!-- hide-methods failed suite-name -->
+                      <a href="#" panel-name="suite-name" class="show-methods failed suite-name"> (show)</a> <!-- show-methods failed suite-name -->
+                    </span>
+                    <div class="method-list-content failed suite-name">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-name" title="testcase.rediff.PortfolioManagment" class="method navigator-link" hash-for-method="DeletePortfolio(org.testng.TestRunner@334ebcaa)">DeletePortfolio(org.testng.TestRunner@334ebcaa)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-name -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-name" class="hide-methods skipped suite-name"> (hide)</a> <!-- hide-methods skipped suite-name -->
+                      <a href="#" panel-name="suite-name" class="show-methods skipped suite-name"> (show)</a> <!-- show-methods skipped suite-name -->
+                    </span>
+                    <div class="method-list-content skipped suite-name">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-name" title="testcase.rediff.PortfolioManagment" class="method navigator-link" hash-for-method="DeletePortfolio">DeletePortfolio</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-name" title="testcase.rediff.Session" class="method navigator-link" hash-for-method="doLogin">doLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-name -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-name" class="hide-methods passed suite-name"> (hide)</a> <!-- hide-methods passed suite-name -->
+                      <a href="#" panel-name="suite-name" class="show-methods passed suite-name"> (show)</a> <!-- show-methods passed suite-name -->
+                    </span>
+                    <div class="method-list-content passed suite-name">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-name" title="testcase.rediff.PortfolioManagment" class="method navigator-link" hash-for-method="CreatePortfolio(org.testng.TestRunner@2a27cb34)">CreatePortfolio(org.testng.TestRunner@2a27cb34)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-name" title="testcase.rediff.PortfolioManagment" class="method navigator-link" hash-for-method="CreatePortfolio(org.testng.TestRunner@ccf91df)">CreatePortfolio(org.testng.TestRunner@ccf91df)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-name" title="testcase.rediff.Session" class="method navigator-link" hash-for-method="doLogin(org.testng.TestRunner@2a27cb34)">doLogin(org.testng.TestRunner@2a27cb34)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-name" title="testcase.rediff.Session" class="method navigator-link" hash-for-method="doLogin(org.testng.TestRunner@ccf91df)">doLogin(org.testng.TestRunner@ccf91df)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-name" title="testcase.rediff.Session" class="method navigator-link" hash-for-method="doLogin(org.testng.TestRunner@334ebcaa)">doLogin(org.testng.TestRunner@334ebcaa)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-name -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-name" class="panel name">
+          <div class="suite-name-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testcase.rediff.PortfolioManagment</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="DeletePortfolio(org.testng.TestRunner@334ebcaa)">
+                  </a> <!-- DeletePortfolio(org.testng.TestRunner@334ebcaa) -->
+                  <span class="method-name">DeletePortfolio</span>
+                  <span class="parameters">(org.testng.TestRunner@334ebcaa)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Cannot locate option with text: Portfolio10
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0-alpha-7&apos;, revision: &apos;de8579b6d5&apos;
+System info: host: &apos;DESKTOP-AMIP7MB&apos;, ip: &apos;192.168.1.9&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:151)
+	at keywords.GenericKeywords.selectPortfolio(GenericKeywords.java:313)
+	at testcase.rediff.PortfolioManagment.DeletePortfolio(PortfolioManagment.java:37)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at runner.TestNGRunner.run(TestNGRunner.java:76)
+	at runner.JSONRunner.main(JSONRunner.java:96)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-name-class-failed -->
+          <div class="suite-name-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">testcase.rediff.PortfolioManagment</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="DeletePortfolio">
+                  </a> <!-- DeletePortfolio -->
+                  <span class="method-name">DeletePortfolio</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping test as runmode is N
+	at BaseTest.BaseTest.beforetest(BaseTest.java:49)
+	at runner.TestNGRunner.run(TestNGRunner.java:76)
+	at runner.JSONRunner.main(JSONRunner.java:96)
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-name-class-skipped -->
+          <div class="suite-name-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">testcase.rediff.Session</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="doLogin">
+                  </a> <!-- doLogin -->
+                  <span class="method-name">doLogin</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping test as runmode is N
+	at BaseTest.BaseTest.beforetest(BaseTest.java:49)
+	at runner.TestNGRunner.run(TestNGRunner.java:76)
+	at runner.JSONRunner.main(JSONRunner.java:96)
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-name-class-skipped -->
+          <div class="suite-name-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcase.rediff.PortfolioManagment</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CreatePortfolio(org.testng.TestRunner@2a27cb34)">
+                  </a> <!-- CreatePortfolio(org.testng.TestRunner@2a27cb34) -->
+                  <span class="method-name">CreatePortfolio</span>
+                  <span class="parameters">(org.testng.TestRunner@2a27cb34)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CreatePortfolio(org.testng.TestRunner@ccf91df)">
+                  </a> <!-- CreatePortfolio(org.testng.TestRunner@ccf91df) -->
+                  <span class="method-name">CreatePortfolio</span>
+                  <span class="parameters">(org.testng.TestRunner@ccf91df)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-name-class-passed -->
+          <div class="suite-name-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcase.rediff.Session</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="doLogin(org.testng.TestRunner@2a27cb34)">
+                  </a> <!-- doLogin(org.testng.TestRunner@2a27cb34) -->
+                  <span class="method-name">doLogin</span>
+                  <span class="parameters">(org.testng.TestRunner@2a27cb34)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="doLogin(org.testng.TestRunner@ccf91df)">
+                  </a> <!-- doLogin(org.testng.TestRunner@ccf91df) -->
+                  <span class="method-name">doLogin</span>
+                  <span class="parameters">(org.testng.TestRunner@ccf91df)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="doLogin(org.testng.TestRunner@334ebcaa)">
+                  </a> <!-- doLogin(org.testng.TestRunner@334ebcaa) -->
+                  <span class="method-name">doLogin</span>
+                  <span class="parameters">(org.testng.TestRunner@334ebcaa)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-name-class-passed -->
+        </div> <!-- panel name -->
+        <div panel-name="test-xml-name" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;name&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;Listeners.myTestNGListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Create Portfolio--Create New PortFolio-pos-It-1&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;parameter name=&quot;action&quot; value=&quot;createport&quot;/&gt;
+    &lt;parameter name=&quot;Iteration&quot; value=&quot;0&quot;/&gt;
+    &lt;parameter name=&quot;datafilepath&quot; value=&quot;C:\Users\sidan\eclipse-workspace\DataDrivenFramework//src//test//resources//jsons//data//portfoliodata.json&quot;/&gt;
+    &lt;parameter name=&quot;dataflag&quot; value=&quot;createnewportfolio&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testcase.rediff.Session&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;doLogin&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- testcase.rediff.Session --&gt;
+      &lt;class name=&quot;testcase.rediff.PortfolioManagment&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;CreatePortfolio&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- testcase.rediff.PortfolioManagment --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Create Portfolio-Create New PortFolio-pos-It-1 --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Create Portfolio--Create New PortFolio-pos-It-2&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;parameter name=&quot;action&quot; value=&quot;createport&quot;/&gt;
+    &lt;parameter name=&quot;Iteration&quot; value=&quot;1&quot;/&gt;
+    &lt;parameter name=&quot;datafilepath&quot; value=&quot;C:\Users\sidan\eclipse-workspace\DataDrivenFramework//src//test//resources//jsons//data//portfoliodata.json&quot;/&gt;
+    &lt;parameter name=&quot;dataflag&quot; value=&quot;createnewportfolio&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testcase.rediff.Session&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;doLogin&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- testcase.rediff.Session --&gt;
+      &lt;class name=&quot;testcase.rediff.PortfolioManagment&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;CreatePortfolio&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- testcase.rediff.PortfolioManagment --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Create Portfolio-Create New PortFolio-pos-It-2 --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Delete Portfolio--Delete Existing PortFolio-It-1&quot;&gt;
+    &lt;parameter name=&quot;localpara1&quot; value=&quot;localval1&quot;/&gt;
+    &lt;parameter name=&quot;Iteration&quot; value=&quot;0&quot;/&gt;
+    &lt;parameter name=&quot;datafilepath&quot; value=&quot;C:\Users\sidan\eclipse-workspace\DataDrivenFramework//src//test//resources//jsons//data//portfoliodata.json&quot;/&gt;
+    &lt;parameter name=&quot;dataflag&quot; value=&quot;deleteportfolio&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testcase.rediff.Session&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;doLogin&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- testcase.rediff.Session --&gt;
+      &lt;class name=&quot;testcase.rediff.PortfolioManagment&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;DeletePortfolio&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- testcase.rediff.PortfolioManagment --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Delete Portfolio-Delete Existing PortFolio-It-1 --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Delete Portfolio--Delete Existing PortFolio-It-2&quot;&gt;
+    &lt;parameter name=&quot;localpara1&quot; value=&quot;localval1&quot;/&gt;
+    &lt;parameter name=&quot;Iteration&quot; value=&quot;1&quot;/&gt;
+    &lt;parameter name=&quot;datafilepath&quot; value=&quot;C:\Users\sidan\eclipse-workspace\DataDrivenFramework//src//test//resources//jsons//data//portfoliodata.json&quot;/&gt;
+    &lt;parameter name=&quot;dataflag&quot; value=&quot;deleteportfolio&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testcase.rediff.Session&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;doLogin&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- testcase.rediff.Session --&gt;
+      &lt;class name=&quot;testcase.rediff.PortfolioManagment&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;DeletePortfolio&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- testcase.rediff.PortfolioManagment --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Delete Portfolio-Delete Existing PortFolio-It-2 --&gt;
+&lt;/suite&gt; &lt;!-- name --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-name" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for name</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Create Portfolio--Create New PortFolio-pos-It-1 (2 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">Create Portfolio--Create New PortFolio-pos-It-2 (2 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">Delete Portfolio--Delete Existing PortFolio-It-1 (2 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">Delete Portfolio--Delete Existing PortFolio-It-2 (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-name" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for name</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-name" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for name</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_name');
+function tableData_name() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(8);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'CreatePortfolio')
+data.setCell(0, 2, 'testcase.rediff.PortfolioManagment')
+data.setCell(0, 3, 19155);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'CreatePortfolio')
+data.setCell(1, 2, 'testcase.rediff.PortfolioManagment')
+data.setCell(1, 3, 19143);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'DeletePortfolio')
+data.setCell(2, 2, 'testcase.rediff.PortfolioManagment')
+data.setCell(2, 3, 14159);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'doLogin')
+data.setCell(3, 2, 'testcase.rediff.Session')
+data.setCell(3, 3, 4843);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'doLogin')
+data.setCell(4, 2, 'testcase.rediff.Session')
+data.setCell(4, 3, 4714);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'doLogin')
+data.setCell(5, 2, 'testcase.rediff.Session')
+data.setCell(5, 3, 4229);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'doLogin')
+data.setCell(6, 2, 'testcase.rediff.Session')
+data.setCell(6, 3, 0);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'DeletePortfolio')
+data.setCell(7, 2, 'testcase.rediff.PortfolioManagment')
+data.setCell(7, 3, 0);
+window.suiteTableData['name']= { tableData: data, tableDiv: 'times-div-name'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-name">
+              </div> <!-- times-div-name -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-name" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for name</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-name" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">20 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testcase.rediff.PortfolioManagment</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">SelectPortfolio</span>
+                <br/>
+                <span class="ignored-method-name">SelectPortfolio</span>
+                <br/>
+                <span class="ignored-method-name">SelectPortfolio</span>
+                <br/>
+                <span class="ignored-method-name">SelectPortfolio</span>
+                <br/>
+                <span class="ignored-method-name">AfterTest</span>
+                <br/>
+                <span class="ignored-method-name">AfterTest</span>
+                <br/>
+                <span class="ignored-method-name">AfterTest</span>
+                <br/>
+                <span class="ignored-method-name">AfterTest</span>
+                <br/>
+                <span class="ignored-method-name">CreatePortfolio</span>
+                <br/>
+                <span class="ignored-method-name">CreatePortfolio</span>
+                <br/>
+                <span class="ignored-method-name">DeletePortfolio</span>
+                <br/>
+                <span class="ignored-method-name">DeletePortfolio</span>
+                <br/>
+                <span class="ignored-method-name">beforetest</span>
+                <br/>
+                <span class="ignored-method-name">beforetest</span>
+                <br/>
+                <span class="ignored-method-name">beforetest</span>
+                <br/>
+                <span class="ignored-method-name">beforetest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testcase.rediff.Session</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">doLogOut</span>
+                <br/>
+                <span class="ignored-method-name">doLogOut</span>
+                <br/>
+                <span class="ignored-method-name">doLogOut</span>
+                <br/>
+                <span class="ignored-method-name">doLogOut</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-name" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.rediff.Session</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">beforetest(org.testng.TestRunner@2a27cb34)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeMethod(org.testng.TestRunner@2a27cb34)</span>
+                <span class="method-start">168 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">doLogin(org.testng.TestRunner@2a27cb34)</span>
+                <span class="method-start">169 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.rediff.PortfolioManagment</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeMethod(org.testng.TestRunner@2a27cb34)</span>
+                <span class="method-start">4886 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CreatePortfolio(org.testng.TestRunner@2a27cb34)</span>
+                <span class="method-start">4887 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.rediff.Session</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">AfterTest(org.testng.TestRunner@2a27cb34)</span>
+                <span class="method-start">24043 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-test before">
+                <span class="method-name">beforetest(org.testng.TestRunner@ccf91df)</span>
+                <span class="method-start">24919 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeMethod(org.testng.TestRunner@ccf91df)</span>
+                <span class="method-start">24920 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">doLogin(org.testng.TestRunner@ccf91df)</span>
+                <span class="method-start">24920 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.rediff.PortfolioManagment</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeMethod(org.testng.TestRunner@ccf91df)</span>
+                <span class="method-start">29764 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CreatePortfolio(org.testng.TestRunner@ccf91df)</span>
+                <span class="method-start">29764 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.rediff.Session</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">AfterTest(org.testng.TestRunner@ccf91df)</span>
+                <span class="method-start">48907 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-test before">
+                <span class="method-name">beforetest(org.testng.TestRunner@334ebcaa)</span>
+                <span class="method-start">49572 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeMethod(org.testng.TestRunner@334ebcaa)</span>
+                <span class="method-start">49573 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">doLogin(org.testng.TestRunner@334ebcaa)</span>
+                <span class="method-start">49573 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.rediff.PortfolioManagment</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeMethod(org.testng.TestRunner@334ebcaa)</span>
+                <span class="method-start">53803 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">DeletePortfolio(org.testng.TestRunner@334ebcaa)</span>
+                <span class="method-start">53803 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.rediff.Session</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">AfterTest(org.testng.TestRunner@334ebcaa)</span>
+                <span class="method-start">67962 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-test before">
+                <span class="method-name">beforetest(org.testng.TestRunner@5634a861)</span>
+                <span class="method-start">68609 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeMethod(org.testng.TestRunner@5634a861)</span>
+                <span class="method-start">68611 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">doLogin</span>
+                <span class="method-start">68611 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.rediff.PortfolioManagment</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeMethod(org.testng.TestRunner@5634a861)</span>
+                <span class="method-start">68611 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">DeletePortfolio</span>
+                <span class="method-start">68611 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcase.rediff.Session</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">AfterTest(org.testng.TestRunner@5634a861)</span>
+                <span class="method-start">68612 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

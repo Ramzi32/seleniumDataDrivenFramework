@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="22" failures="0" name="TestSuite" time="87.097" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jre1.8.0_281\bin"/>
+    <property name="java.vm.version" value="25.281-b09"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\sidan\eclipse-workspace\DataDrivenFramework"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\sidan\eclipse-workspace\DataDrivenFramework"/>
+    <property name="java.runtime.version" value="1.8.0_281-b09"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jre1.8.0_281\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\sidan\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\Users\sidan\MAVEN\apache-maven-3.8.1\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Users\sidan\MAVEN\apache-maven-3.8.1\bin;C:\Users\sidan\Drivers;C:\Program Files\Git\cmd;C:\Users\sidan\;C:\Users\sidan\AppData\Local\Microsoft\WindowsApps;C:\Users\sidan\AppData\Roaming\npm;."/>
+    <property name="maven.conf" value="C:\Users\sidan\MAVEN\apache-maven-3.8.1\bin\../conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="C:\Users\sidan\MAVEN\apache-maven-3.8.1\bin\..\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\sidan"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="sidan"/>
+    <property name="java.class.path" value="C:\Users\sidan\MAVEN\apache-maven-3.8.1\bin\..\boot\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jre1.8.0_281"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_281"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jre1.8.0_281\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jre1.8.0_281\lib\resources.jar;C:\Program Files\Java\jre1.8.0_281\lib\rt.jar;C:\Program Files\Java\jre1.8.0_281\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_281\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_281\lib\jce.jar;C:\Program Files\Java\jre1.8.0_281\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_281\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_281\classes"/>
+    <property name="sun.stderr.encoding" value="cp437"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Users\sidan\MAVEN\apache-maven-3.8.1\bin\.."/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.stdout.encoding" value="cp437"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="testcase.rediff.Session" name="doLogin" time="10.648"/>
+  <testcase classname="testcase.rediff.Session" name="doLogin" time="0.231"/>
+  <testcase classname="testcase.rediff.PortfolioManagment" name="SelectPortfolio" time="4.274"/>
+  <testcase classname="testcase.rediff.StockManagment" name="addNewStock" time="11.085"/>
+  <testcase classname="testcase.rediff.StockManagment" name="verifyStockPresence" time="0.607"/>
+  <testcase classname="testcase.rediff.StockManagment" name="verifyStockQuantity" time="0.306"/>
+  <testcase classname="testcase.rediff.PortfolioManagment" name="CreatePortfolio" time="1.276"/>
+  <testcase classname="testcase.rediff.StockManagment" name="verifyTransactionHistory" time="2.826"/>
+  <testcase classname="testcase.rediff.Session" name="doLogin" time="7.544"/>
+  <testcase classname="testcase.rediff.Session" name="doLogin" time="5.086"/>
+  <testcase classname="testcase.rediff.PortfolioManagment" name="SelectPortfolio" time="3.641"/>
+  <testcase classname="testcase.rediff.StockManagment" name="verifyStockPresence" time="0.463"/>
+  <testcase classname="testcase.rediff.PortfolioManagment" name="DeletePortfolio" time="5.4"/>
+  <testcase classname="testcase.rediff.StockManagment" name="modifyStock" time="5.536"/>
+  <testcase classname="testcase.rediff.StockManagment" name="verifyStockQuantity" time="0.412"/>
+  <testcase classname="testcase.rediff.StockManagment" name="verifyTransactionHistory" time="3.061"/>
+  <testcase classname="testcase.rediff.Session" name="doLogin" time="9.878"/>
+  <testcase classname="testcase.rediff.PortfolioManagment" name="SelectPortfolio" time="4.958"/>
+  <testcase classname="testcase.rediff.StockManagment" name="verifyStockPresence" time="0.498"/>
+  <testcase classname="testcase.rediff.StockManagment" name="modifyStock" time="6.033"/>
+  <testcase classname="testcase.rediff.StockManagment" name="verifyStockQuantity" time="0.562"/>
+  <testcase classname="testcase.rediff.StockManagment" name="verifyTransactionHistory" time="2.772"/>
+</testsuite>

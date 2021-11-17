@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [name (0)]">
+  <listeners>
+    <listener class-name="Listeners.myTestNGListener"/>
+  </listeners>
+  <test thread-count="5" name="Add New Stock--New Stock-It-2(failed)">
+    <parameter name="action" value="addstock"/>
+    <parameter name="para1" value="paraval1"/>
+    <parameter name="Iteration" value="1"/>
+    <parameter name="datafilepath" value="C:\Users\sidan\eclipse-workspace\DataDrivenFramework//src//test//resources//jsons//data//stockdata.json"/>
+    <parameter name="dataflag" value="addfreshstock"/>
+    <classes>
+      <class name="testcase.rediff.StockManagment">
+        <methods>
+          <include name="verifyTransactionHistory"/>
+          <include name="AfterTest"/>
+          <include name="BeforeMethod"/>
+          <include name="addNewStock"/>
+          <include name="beforetest"/>
+          <include name="verifyStockQuantity"/>
+        </methods>
+      </class> <!-- testcase.rediff.StockManagment -->
+      <class name="testcase.rediff.Session">
+        <methods>
+          <include name="AfterTest"/>
+          <include name="BeforeMethod"/>
+          <include name="beforetest"/>
+          <include name="doLogin"/>
+        </methods>
+      </class> <!-- testcase.rediff.Session -->
+    </classes>
+  </test> <!-- Add New Stock-New Stock-It-2(failed) -->
+  <test thread-count="5" name="Modify Stock--Buy Existing Stock-It-2(failed)">
+    <parameter name="action" value="addstock"/>
+    <parameter name="para1" value="paraval1"/>
+    <parameter name="Iteration" value="1"/>
+    <parameter name="datafilepath" value="C:\Users\sidan\eclipse-workspace\DataDrivenFramework//src//test//resources//jsons//data//stockdata.json"/>
+    <parameter name="dataflag" value="addexistingstock"/>
+    <classes>
+      <class name="testcase.rediff.StockManagment">
+        <methods>
+          <include name="verifyTransactionHistory"/>
+          <include name="AfterTest"/>
+          <include name="BeforeMethod"/>
+          <include name="beforetest"/>
+          <include name="modifyStock"/>
+          <include name="verifyStockQuantity"/>
+        </methods>
+      </class> <!-- testcase.rediff.StockManagment -->
+      <class name="testcase.rediff.Session">
+        <methods>
+          <include name="AfterTest"/>
+          <include name="BeforeMethod"/>
+          <include name="beforetest"/>
+          <include name="doLogin"/>
+        </methods>
+      </class> <!-- testcase.rediff.Session -->
+    </classes>
+  </test> <!-- Modify Stock-Buy Existing Stock-It-2(failed) -->
+</suite> <!-- Failed suite [name (0)] -->

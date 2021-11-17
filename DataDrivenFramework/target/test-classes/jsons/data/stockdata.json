@@ -1,0 +1,59 @@
+{
+	"testdata":[
+	{
+	   "flag":"addfreshstock",
+	    "data":[
+	     {
+	     "portfolioname":"Cat",
+	     "stockname":"Birla Corporation Ltd",
+	     "date":"12-12-2020",
+	     "quantity":"100",
+	     "price":"200",
+	     "runmode":"Y"
+	     },
+	     {
+	     "portfolioname":"Cat",
+	     "stockname":"Reliance Industries Ltd",
+	     "date":"21-12-2021",
+	     "quantity":"200",
+	     "price":"400",
+	     "runmode":"N"
+	     }
+	    ]		
+	},
+	{
+	   "flag":"addexistingstock",
+	    "data":[
+	     {
+	     "portfolioname":"Cat",
+	     "stockname":"Birla Corporation Ltd",
+	     "date":"12-12-2020",
+	     "quantity":"100",
+	     "price":"200",
+	     "runmode":"Y"
+	     },
+	      {
+	      "portfolioname":"Cat",
+	     "stockname":"Reliance Industries Ltd",
+	     "date":"21-12-2020",
+	     "quantity":"200",
+	     "price":"400",
+	     "runmode":"N"
+	     }
+	    ]		
+	},
+	{
+	   "flag":"sellexistingstock",
+	    "data":[
+	     {
+	     "portfolioname":"Cat",
+	     "stockname":"Birla Corporation Ltd",
+	     "date":"12-12-2020",
+	     "quantity":"100",
+	     "price":"200",
+	     "runmode":"Y"
+	     }
+	    ]		
+	}
+]
+}

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [name]">
+  <listeners>
+    <listener class-name="Listeners.myTestNGListener"/>
+  </listeners>
+  <test thread-count="5" name="Delete Portfolio--Delete Existing PortFolio-It-1(failed)">
+    <parameter name="localpara1" value="localval1"/>
+    <parameter name="Iteration" value="0"/>
+    <parameter name="datafilepath" value="C:\Users\sidan\eclipse-workspace\DataDrivenFramework//src//test//resources//jsons//data//portfoliodata.json"/>
+    <parameter name="dataflag" value="deleteportfolio"/>
+    <classes>
+      <class name="testcase.rediff.PortfolioManagment">
+        <methods>
+          <include name="AfterTest"/>
+          <include name="BeforeMethod"/>
+          <include name="DeletePortfolio" invocation-numbers="0"/>
+          <include name="beforetest"/>
+        </methods>
+      </class> <!-- testcase.rediff.PortfolioManagment -->
+    </classes>
+  </test> <!-- Delete Portfolio-Delete Existing PortFolio-It-1(failed) -->
+  <test thread-count="5" name="Delete Portfolio--Delete Existing PortFolio-It-2(failed)">
+    <parameter name="localpara1" value="localval1"/>
+    <parameter name="Iteration" value="1"/>
+    <parameter name="datafilepath" value="C:\Users\sidan\eclipse-workspace\DataDrivenFramework//src//test//resources//jsons//data//portfoliodata.json"/>
+    <parameter name="dataflag" value="deleteportfolio"/>
+    <classes>
+      <class name="testcase.rediff.PortfolioManagment">
+        <methods>
+          <include name="AfterTest"/>
+          <include name="BeforeMethod"/>
+          <include name="DeletePortfolio"/>
+          <include name="beforetest"/>
+        </methods>
+      </class> <!-- testcase.rediff.PortfolioManagment -->
+      <class name="testcase.rediff.Session">
+        <methods>
+          <include name="AfterTest"/>
+          <include name="BeforeMethod"/>
+          <include name="beforetest"/>
+          <include name="doLogin"/>
+        </methods>
+      </class> <!-- testcase.rediff.Session -->
+    </classes>
+  </test> <!-- Delete Portfolio-Delete Existing PortFolio-It-2(failed) -->
+</suite> <!-- Failed suite [name] -->

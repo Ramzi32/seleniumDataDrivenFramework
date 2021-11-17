@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Portfolio Suite">
+<listeners>
+<listener class-name ="Listeners.myTestNGListener"/>
+</listeners>
+  <test name="CreatePortfolio">
+  <classes>
+      <class name="testcase.rediff.Session">
+      <methods>
+      <include name = "doLogin" />
+      </methods>
+      </class>
+      <class name="testcase.rediff.PortfolioManagment">
+      <methods>
+      <include name = "CreatePortfolio" />
+      </methods>
+      </class>
+      
+    </classes>
+  </test> 
+  <test name="DeletePortfolio">
+    <classes>
+     <class name="testcase.rediff.Session">
+      <methods>
+      <include name = "doLogin" />
+      </methods>
+      </class>
+      <class name="testcase.rediff.PortfolioManagment">
+      <methods>
+      <include name = "DeletePortfolio" />
+      </methods>
+      </class>
+    </classes>
+  </test>
+</suite> <!-- Suite -->
